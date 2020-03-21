@@ -1,0 +1,18 @@
+{
+  "name": "CF Brazilian Standings ",
+  "description": "Redirect any contest page in Codeforces to the standings containing only Brazilian participants.",
+  "version": "1.0",
+  "manifest_version" : 2,
+  "background" : {
+    "scripts" : ["background.js"]
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "browser_action": {
+    "default_icon": "icons/icon16.png"
+  },
+  "permissions": ["activeTab"]
+}
