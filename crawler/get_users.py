@@ -1,3 +1,4 @@
+from datetime import datetime
 import requests
 import json
 
@@ -17,10 +18,14 @@ def get_all_active_users():
 def separate_by_country(users):
 	countries = {unknown: []}
 	for user in users:
+		#active = (datetime.now()-datetime.fromtimestamp(user["lastOnlineTimeSeconds"])).days < 30
+		active = True
 		if "country" in user:
 			country = user["country"]
 			if country not in countries: countries[country] = []
-			countries[country].append(user["handle"])
+			countries[country].append([active, user["rating"], user["handle"]])
 		else:
-			countries[unknown].append(user["handle"])
+			countries[unknown].append([active, user["rating"], user["handle"]])
+	for country in countries:
+		countries[country] = sorted(countries[country])[::-1]
 	return countries

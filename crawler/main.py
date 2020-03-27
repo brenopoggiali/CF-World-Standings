@@ -11,10 +11,9 @@ if __name__ == "__main__":
 	users = get_all_active_users()
 	print("Creating Dictionary..")
 	countries_dict = separate_by_country(users)
-	#countries_dict = {'jose': ['breno', 'DanielAugusto', 'EduardoFernandes', 'HenriqueBrito', 'Lixoskywalker', 'Manel_Nesquik']}
 	print("Creating Lists..")
 	create_lists(session, countries_dict)
 	print("Emptying Lists..")
-	#clear_lists(session)
+	clear_lists(session)
 	print("Populating Lists..")
 	populate_lists(session, countries_dict)
