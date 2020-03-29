@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Global standings</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="found" class="container-fluid w-max-content">
+      <form id="countries" class="card card-signin form-div shadow  mt-3 bg-white rounded">
+          <select id="selectedCountry" class="form-control custom" required>
+            <option selected disabled>Select a country</option>
+            <option value="9ca799a0969e87d1644ec151eac4c9b9">Algeria</option>
+            <option value="71b9803382aa697d8ef472c874cc864b">Antarctica</option>
+            <option value="d2538072c6b426a5143f3d72b60eddf0">Argentina</option>
+            <option value="77dc24f1aee0c940d16d2ee85f325134">Armenia</option>
+            <option value="0218a15a6b9ce937627537c3be4ec063">Australia</option>
+            <option value="b403fceae986632a571fcc3564ed0b80">Austria</option>
+            <option value="4f16cc50147e7cb59ac57132551f7aca">Azerbaijan</option>
+            <option value="bf12a4c7a2195a2e8bf08c2aba82b5b9">Bangladesh</option>
+            <option value="ab06add9a073afa1278ca15b06d7eebc">Belarus</option>
+            <option value="65405d5a34cbba036c6f06fd5e61cdd5">Belgium</option>
+            <option value="6d886707b3389724aef2ef82ed019bed">Bolivia</option>
+            <option value="e5a9243713ce27ca90a5fb4b98069536">Bosnia and Herzegovina</option>
+            <option value="b3f13264cbd63c14fcb93d1f29325831">Brazil</option>
+            <option value="3b0cff611adb5e8965c798b5daccaf22">Bulgaria</option>
+            <option value="332b3cf71df8b3bfa99f0555954b59f7">Canada</option>
+            <option value="cd6c6c37034cce93e4b65e9bcbc3323a">Chile</option>
+            <option value="fc371e2d6549233e36b18d37b040f0db">China</option>
+            <option value="0987f5659b73957a80ecddb09e3e7761">Colombia</option>
+            <option value="f75f78f16ad50ac467472709f47de9b0">Croatia</option>
+            <option value="1acf4bb483694d60eb2076514d8290fb">Cuba</option>
+            <option value="78a229f77c7cfc007abb0474a7b68a52">Cyprus</option>
+            <option value="0942bc96d7411c66d2ad30432a11c59c">Czechia</option>
+            <option value="58893a0c85d6c2cb7cdf1f08bc2a77dc">Denmark</option>
+            <option value="18290ca1308f028ab2203392b772159f">Dominican Republic</option>
+            <option value="cba43d40f1de994e13294bdb139dc7b7">Egypt</option>
+            <option value="1e0aa8bb243b0e6746b917b88737210e">El Salvador</option>
+            <option value="7069985531dac39e7c359eb44c95438a">Estonia</option>
+            <option value="fe215fd62ac1d2a9da97628fc2f47ade">Finland</option>
+            <option value="c18f3c2b735ec0f7549ec3e2e261b479">France</option>
+            <option value="0a821f54f02d6f9778d4d22bd4fcd622">Georgia</option>
+            <option value="1b0f47995fde01fce957c507620d5e5c">Germany</option>
+            <option value="b69bc2ecf2071a8d01f7ea7d837a83fc">Greece</option>
+            <option value="52ff5b2e61b94b8c999f83252a6a1fe6">Hong Kong</option>
+            <option value="c318d474e9b04ba3d5a5f1ff7899e778">Hungary</option>
+            <option value="10c69ccc74e15f5123aa2f713d34781f">India</option>
+            <option value="5bed5c5db6311f775c4afbb931b0abd1">Indonesia</option>
+            <option value="f30cc1e5b1c0a8d80b98c147111d18ab">Iran</option>
+            <option value="638e47e335e96a67e6e5e1d7312fe541">Israel</option>
+            <option value="cd4a6db9752695387012be4de89de872">Italy</option>
+            <option value="96e1057e69aff7929446a48f4ee6a288">Japan</option>
+            <option value="e35ee5c1b52a99d658f2f9ee46b572d1">Jordan</option>
+            <option value="5f1b3fc4aa4d5777d34a2fa01d327e07">Kazakhstan</option>
+            <option value="ebbfffe9b5574094f69590c87c9d49dd">Kuwait</option>
+            <option value="f24cf657be1cc6c1cc41be5556e3c1a9">Kyrgyzstan</option>
+            <option value="672b1d4ffd8203f609e04c51071a59e1">Latvia</option>
+            <option value="34b80fbfc1736afb567cadecb46309f3">Lebanon</option>
+            <option value="2dbcf0c240cf65a472326d763434a070">Lithuania</option>
+            <option value="d85f5ba543b9fcf4d5ba43c85c073888">Macedonia</option>
+            <option value="1d6ef72eb139eb71b5f89b368d3cf0c8">Malaysia</option>
+            <option value="001214b56749e662e53d03674d25b7da">Mexico</option>
+            <option value="e9db4c1e273c53d298b90c686977c45f">Moldova</option>
+            <option value="34fb970e46ce9dce12ea32540e2b08ee">Mongolia</option>
+            <option value="469a3e9d41428870cbfb19137e7f0b7a">Morocco</option>
+            <option value="244625de58329b3cbc32521243d27b90">Nepal</option>
+            <option value="fc1a3ff455f53b8c39304ed69c921017">Netherlands</option>
+            <option value="1ceb1bdea0386791afa0410efb84a383">Nigeria</option>
+            <option value="2a8846e961e399ca150d78824a8f2c09">North Korea</option>
+            <option value="c1e2bff98f82657495f2192a7ef06c49">Pakistan</option>
+            <option value="ee1fdd5a985323d706e7fae0f2bb273f">Palestinian Territory</option>
+            <option value="21a6858ebd6fd24d71c9dcdffdc7146a">Peru</option>
+            <option value="186cb4abca0063d42a8c2b6271f9f6b8">Poland</option>
+            <option value="9e7eaeb264cfd67634ce43dac3fa26bb">Portugal</option>
+            <option value="1552601953f07225050eea596cedd858">Romania</option>
+            <option value="6f228e022aad5250ebce0f22bddd19d9">Russia</option>
+            <option value="9a4bce2a2382bebd4f76888bd184ad57">Saudi Arabia</option>
+            <option value="c7f50e7b4dedf7e2ac1e63f1f350cc38">Serbia</option>
+            <option value="7894f7af5e3316af776dd8c438fec303">Singapore</option>
+            <option value="b617e505dfdb261e1eedbb1c434db514">Slovakia</option>
+            <option value="87d41a48c3f1782db57f9ef32dec384d">Slovenia</option>
+            <option value="5d161432cd20fa48780ccd0f4597217f">South Korea</option>
+            <option value="85fb39bb68ce569ce3ac75c1396c2981">Spain</option>
+            <option value="d5ed51d66e934a77bdf592e60174bbce">Sri Lanka</option>
+            <option value="9918df0033b58d152ba92fc6c8c3f003">Sweden</option>
+            <option value="57f1a940096b46f2a9173338cccbd206">Switzerland</option>
+            <option value="c3625d1606b5dc01f98bfa512ffb72bc">Syria</option>
+            <option value="5ccb2a2fd123f58b329dac6915d0bbdf">Taiwan</option>
+            <option value="07d74ec6bdb1601b0b336ddbe42e2eb7">Tajikistan</option>
+            <option value="331c02f4734376dc9d0ba23554e0c893">Thailand</option>
+            <option value="236e48c2b0bc322ec036f06b59908c2b">Tunisia</option>
+            <option value="0055c82fe9ff0a4cef476ab4716fa7e3">Turkey</option>
+            <option value="d195232c599a991ec85ab6a8e028601b">Ukraine</option>
+            <option value="da6c71fa3e87e9dcc68b6fbde98d33a7">United Kingdom</option>
+            <option value="a85abbbf27ceea73f8dc185f583b7390">United States</option>
+            <option value="d6e7701d8482e6d0422918496a152d27">Unknown</option>
+            <option value="73d917cced933516a35352825f5f665e">Uzbekistan</option>
+            <option value="d1abb9944beb362ff55dc614789bcbc0">Venezuela</option>
+            <option value="1dc10ab7e2bee7486b7e28efa771e3ac">Vietnam</option>
+            <option value="b12acdfba82bb6d4f67ce26fe18a9f7c">Zimbabwe</option>
+          </select>
+      </form>
+      <div class="mx-auto m-3" style="display: block; width:140px;">
+        <button id="goToStandings" form="countries" class="btn btn-primary mx-auto m-2" type="button" style="width: 140px;">
+          Go to standings
+        </button>
+      </div>
+    </div>
+    <div id="notFound" class="container-fluid w-max-content">
+      <div>
+        Please enter a gym or a contest in Codeforces.
+      </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/background.js"></script>
+  </body>
+</html>
