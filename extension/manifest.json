@@ -1,18 +1,23 @@
 {
-  "name": "CF Brazilian Standings ",
-  "description": "Redirect any contest page in Codeforces to the standings containing only Brazilian participants.",
+  "name": "CF World Standings ",
+  "description": "This extension filters the standings for a given contest on Codeforces to show only active competitors of a specific country.",
   "version": "1.0",
   "manifest_version" : 2,
-  "background" : {
-    "scripts" : ["background.js"]
-  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["js/jquery.min.js", "js/background.js"]
+    }
+  ],
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
   },
   "browser_action": {
-    "default_icon": "icons/icon16.png"
+    "default_icon": "icons/icon16.png",
+    "default_popup": "index.html",
+    "default_title": "CF World Standings"
   },
-  "permissions": ["activeTab"]
+  "permissions": ["tabs"]
 }
