@@ -4,6 +4,9 @@ document.addEventListener("DOMContentLoaded", function() {
 		var tab_url = tab.url;
 		var arg = tab_url.split("/");
 		var options = ["gym", "contest"]
+		browser.storage.local.get("lastCountryUrl", function(obj) {
+			if (obj.lastCountryUrl) $("#selectedCountry").val(obj.lastCountryUrl);
+		});
 		if (options.includes(arg[3]) && arg[2] === "codeforces.com") {
 			$("#found").show();
 			$("#notFound").hide();
@@ -26,6 +29,7 @@ $("#goToStandings").click(() => {
 		}
 		else {
 			var newUrl = "https://codeforces.com/" + arg[3] + "/" + arg[4] + "/standings?list=" + listUrl;
+			browser.storage.local.set({ "lastCountryUrl": listUrl });
 			browser.tabs.update(tab.id, {url: newUrl});
 		}
 	});

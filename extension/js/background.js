@@ -29,7 +29,7 @@ $("#goToStandings").click(() => {
 		}
 		else {
 			var newUrl = "https://codeforces.com/" + arg[3] + "/" + arg[4] + "/standings?list=" + listUrl;
-			chrome.storage.sync.set({ "lastCountryUrl": listUrl })
+			chrome.storage.sync.set({ "lastCountryUrl": listUrl });
 			chrome.tabs.update(tab.id, {url: newUrl});
 		}
 	});

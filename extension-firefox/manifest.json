@@ -1,7 +1,7 @@
 {
   "name": "CF World Standings ",
   "description": "This extension filters the standings for a given contest on Codeforces to show only active competitors of a specific country.",
-  "version": "1.0",
+  "version": "1.0.1",
   "manifest_version" : 2,
   "content_scripts": [
     {
@@ -19,5 +19,5 @@
     "default_popup": "index.html",
     "default_title": "CF World Standings"
   },
-  "permissions": ["tabs"]
+  "permissions": ["tabs", "storage"]
 }
