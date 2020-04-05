@@ -22,7 +22,6 @@ def separate_by_country(users):
     for user in users:
         user_datetime = datetime.fromtimestamp(user["lastOnlineTimeSeconds"])
         active = (datetime.now()-user_datetime).days < 30
-        active = True
         if "country" in user:
             country = user["country"]
             if country not in countries:

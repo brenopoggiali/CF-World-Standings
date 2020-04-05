@@ -85,7 +85,7 @@ def clear_lists(session):
                           'userId': user_id,
                           'csrf_token': csrf}
                 session.post(edit_list_url, data=params)
-            except KeyError:
+            except (KeyError, IndexError):
                 pass
         print(f'\tList of {country} emptied!')
 
