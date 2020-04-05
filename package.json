@@ -1,0 +1,28 @@
+{
+  "name": "CF-World-Standings",
+  "version": "1.0.1",
+  "description": "Chrome and Firefox extension that filters the standings for a given contest on Codeforces to show only active competitors of a specific country.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brenopoggiali/CF-World-Standings.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brenopoggiali/CF-World-Standings/issues"
+  },
+  "homepage": "https://github.com/brenopoggiali/CF-World-Standings#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
+  }
+}
