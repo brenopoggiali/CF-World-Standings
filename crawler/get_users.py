@@ -3,7 +3,8 @@ import requests
 import json
 
 # Global Variables #
-active_users_url = "https://codeforces.com/api/user.ratedList?activeOnly=false"
+active_users_url = \
+    "https://codeforces.com/api/user.ratedList?activeOnly=false&lang=en"
 unknown = "Unknown"
 
 # Static Variables #
